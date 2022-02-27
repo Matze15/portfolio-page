@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <title>Matthies Kallsen</title>
+
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&display=swap" rel="stylesheet">
+    <!--font-family: 'IBM Plex Sans', sans-serif;-->
+    <script src="https://kit.fontawesome.com/131d733311.js" crossorigin="anonymous"></script>
+
+    <meta name="viewport" content="width=device-width" />
+    <script src="./script.js"></script>
+
+
+  </head>
+
+  <body>
+    <header class="bgdark">
+
+      <div id="headercontent" class="wmax">
+
+        <div id="headername"><a onclick="document.documentElement.scrollTop = 0" class="link">Matthies Kallsen</a></div>
+
+        <nav>
+          <ul id="navlist">
+            <li><a class="link" onclick="document.getElementById('about').scrollIntoView()">About</a></li>
+            <li><a class="link" onclick="document.getElementById('projects').scrollIntoView()">Projects</a></li>
+            <li><a class="link" onclick="document.getElementById('stack').scrollIntoView()">Techstack</a></li>
+            <li><a class="link" onclick="document.getElementById('education').scrollIntoView()">Education</a></li>
+            <li><a class="link" onclick="document.getElementById('contact').scrollIntoView()">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div id="menu-icon" onclick="toggleMobileMenu(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+          <ul class="mobile-menu bgdark">
+            <li><a class="link" onclick="document.getElementById('about').scrollIntoView()">About</a></li>
+            <li><a class="link" onclick="document.getElementById('projects').scrollIntoView()">Projects</a></li>
+            <li><a class="link" onclick="document.getElementById('stack').scrollIntoView()">Techstack</a></li>
+            <li><a class="link" onclick="document.getElementById('education').scrollIntoView()">Education</a></li>
+            <li><a class="link" onclick="document.getElementById('contact').scrollIntoView()">Contact</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+    </header>
+
+    <main>
+
+      <section id="welcome" class="bgwhite">
+
+        <div class="wmax">
+          Hi, I'm <span class="tcyan">Matthies</span>.<br>Soon to be <span class="tcyan">Data Analyst</span>.
+          <br><button id="learn-button" onclick="document.getElementById('about').scrollIntoView()">Learn more</button>
+        </div>
+
+      </section>
+
+      <section id="about" class="bgdark">
+
+        <div class="wmax">
+          <h1 class="tcyan">About me.</h1>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta ducimus dolore molestiae quis ipsa expedita officiis dignissimos illum, corporis odio pariatur dolor laborum nam maiores! Ipsa a inventore harum nulla?</p>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta ducimus dolore molestiae quis ipsa expedita officiis dignissimos illum, corporis odio pariatur dolor laborum nam maiores! Ipsa a inventore harum nulla?</p>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta ducimus dolore molestiae quis ipsa expedita officiis dignissimos illum, corporis odio pariatur dolor laborum nam maiores! Ipsa a inventore harum nulla?</p>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta ducimus dolore molestiae quis ipsa expedita officiis dignissimos illum, corporis odio pariatur dolor laborum nam maiores! Ipsa a inventore harum nulla?</p>
+        </div>
+
+      </section>
+
+      <section id='projects'>
+
+      </section>
+
+      <section id="contact" class="bgdark">
+
+        <div class="wmax">
+
+          <h1 class="tcyan">Contact me.</h1>
+
+          <div id="contactbody">
+
+          <form action="./contact.php" method="post">
+            <input type="text" name="name" placeholder="Your name."><br>
+            <input type="text" name="email" placeholder="You Email."><br>
+            <input type="text" name="subject" placeholder="Subject."><br>
+            <textarea name="message" id="messagetext" cols="30" rows="10" placeholder="Message."></textarea><br>
+            <input type="submit" name="submit" value="Send">
+          </form>
+
+          <div id="socialmedia">
+            <button id="buttonmail" class="contactbutton" onmouseover="change(this.id,'matthies@kallsen.net')" onmouseout="change(this.id,`Email <i class='fa-solid fa-envelope'></i>`)" onclick="copy('matthies@kallsen.net');change(this.id,'Copied to clipboard.');">Email <i class="fa-solid fa-envelope"></i></button><br>
+            <button id="buttonlinked" class="contactbutton" onclick="window.open('https://www.linkedin.com/in/matthies-kallsen-181418221/','_blank')">LinkedIn <i class="fa-brands fa-linkedin"></i></button><br>
+            <button id="buttondisc" class="contactbutton" onmouseover="change(this.id,'matze#1722')" onmouseout="change(this.id,`Discord <i class='fa-brands fa-discord'></i>`)" onclick="copy('matze#1722');change(this.id,'Copied to clipboard.');">Discord <i class="fa-brands fa-discord"></i></button>
+
+          </div>
+
+          </div>
+
+        </div>
+
+
+      </section>
+
+    </main>
+
+    <footer>
+      <div id="footercontent" class="wmax bgwhite" >
+        <div id="cr">
+          © Matthies Kallsen, 2022 - <span onclick="window.location.href = './legal/about.html'" class="linklight underline">Legal notice</span> - <span onclick="window.location.href = './legal/privacy.html'" class="linklight underline">Privacy</span>          
+        </div>
+        <div id="socials">
+          <i class="fa-solid fa-envelope linklight" onclick="window.location.href = 'mailto:matthies@kallsen.net'"></i>
+          <i class="fa-brands fa-github linklight" onclick="window.open('https://github.com/Matze15','_blank')"></i>
+          <i class="fa-brands fa-linkedin linklight" onclick="window.open('https://www.linkedin.com/in/matthies-kallsen-181418221/','_blank')"></i>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
