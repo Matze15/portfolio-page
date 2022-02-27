@@ -1,3 +1,3 @@
 # My portfolio website
 
-This is my personal website, made completely from scratch.
+This is my personal website, made from scratch.
