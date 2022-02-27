@@ -253,4 +253,16 @@ section h1{
     footer{
         height: 100px;
     }
+    #contact form input[type=submit]{
+        width: 300px;
+    }
+    #contact form input[type=text]{
+        width: 300px;
+    }
+    #contact form textarea{
+        width: 300px;
+    }
+    .contactbutton{
+        width: 300px;
+    }
 }
