@@ -27,6 +27,9 @@ body{
 .tcyan{
     color: rgb(0, 170, 170);
 }
+.tpink{
+    color: rgb(216,0,216)
+}
 .link{
     text-decoration: none;
     color: white;
@@ -241,10 +244,15 @@ section h1{
 
 }
 .eduelem{
+    max-width: 400px;
     width: fit-content;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    border-radius: 7px;
+    padding: 10px;
 }
-
-
+.eduelem h3{
+    margin: 0;
+}
 
 
 
