@@ -237,6 +237,37 @@ section h1{
     border: 3px solid rgb(216,0,216);
     background-color: rgb(40, 40, 83);
 }
+#edublock{
+
+}
+.eduelem{
+    width: fit-content;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 700px){
     header nav{
         display: none;
