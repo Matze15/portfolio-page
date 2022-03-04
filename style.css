@@ -245,13 +245,21 @@ section h1{
 }
 .eduelem{
     max-width: 400px;
-    width: fit-content;
     box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
     border-radius: 7px;
     padding: 10px;
+    line-height: 30px;
+    margin: 0 0 20px 0;
 }
 .eduelem h3{
     margin: 0;
+}
+.eduelem span{
+    
+}
+.faicn{
+    text-align: center;
+    width: 30px;
 }
 
 
