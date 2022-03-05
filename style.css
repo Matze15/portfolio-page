@@ -244,8 +244,10 @@ section h1{
 
 }
 .eduelem{
+    /* border: 1px solid rgb(216,0,216); */
     max-width: 400px;
-    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    /* box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset; */
     border-radius: 7px;
     padding: 10px;
     line-height: 30px;
