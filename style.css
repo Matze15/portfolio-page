@@ -152,7 +152,7 @@ footer{
 section{
     padding: 150px 5px;
 }
-#learn-button{
+.more-button{
     text-align: center;
     border: 3px solid rgb(40, 40, 83);
     background-color: rgb(40, 40, 83);
@@ -162,9 +162,11 @@ section{
     color: white;
     border-radius: 5px;
     transition: color 0.5s, transform 0.2s, background-color 0.2s;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
 }
 
-#learn-button:hover{
+.more-button:hover{
     color: rgb(40, 40, 83);
     background-color: rgb(216,0,216);
 }
@@ -311,7 +313,9 @@ section h1{
 .onshow{
     display: none;
 }
-
+.prbu{
+    font-size: 150%;
+}
 
 
 
