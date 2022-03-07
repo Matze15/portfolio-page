@@ -290,6 +290,7 @@ section h1{
 }
 .placeholder{
     clear: both;
+    width: 100%;
 }
 #projectcontent{
     display: flex;
@@ -315,6 +316,7 @@ section h1{
 }
 .prbu{
     font-size: 150%;
+    margin-top: 25px;
 }
 
 
