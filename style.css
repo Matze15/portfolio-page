@@ -308,7 +308,9 @@ section h1{
     border-radius: 7px;
     max-width: 300px;
 }
-
+.onshow{
+    display: none;
+}
 
 
 

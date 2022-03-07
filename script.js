@@ -10,3 +10,28 @@ function change(id,newText){
 function copy(string){
     navigator.clipboard.writeText(string);
 }
+let moreProjectsShown = false;
+function showMoreProjects(){
+    const hiddenProjects = document.getElementsByClassName('projectcontainer onshow');
+    for(let i = 0; i < hiddenProjects.length; i++){
+        hiddenProjects[i].style.display = 'block';
+    }
+    moreProjectsShown = true;
+}
+function hideMoreProjects(){
+    const hiddenProjects = document.getElementsByClassName('projectcontainer onshow');
+    for(let i = 0; i < hiddenProjects.length; i++){
+        hiddenProjects[i].style.display = 'none';
+    }
+    moreProjectsShown = false;
+}
+function changeHiddenProjectsStatus(button){
+    if(moreProjectsShown){
+        hideMoreProjects();
+        button.innerText = 'Show more'
+    }
+    else{
+        showMoreProjects();
+        button.innerText = 'Hide additional projects'
+    }
+}
