@@ -28,7 +28,7 @@ function hideMoreProjects(){
 function changeHiddenProjectsStatus(button){
     if(moreProjectsShown){
         hideMoreProjects();
-        document.getElementsByClassName('projectcontainer')[0].scrollIntoView({behavior:'smooth'});
+        document.getElementById('projects').scrollIntoView({behavior:'smooth'});
         button.innerText = 'Show more'
     }
     else{
