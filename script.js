@@ -28,10 +28,12 @@ function hideMoreProjects(){
 function changeHiddenProjectsStatus(button){
     if(moreProjectsShown){
         hideMoreProjects();
+        document.getElementsByClassName('projectcontainer')[0].scrollIntoView({behavior:'smooth'});
         button.innerText = 'Show more'
     }
     else{
         showMoreProjects();
+        document.getElementsByClassName('projectcontainer')[3].scrollIntoView({behavior:'smooth'});
         button.innerText = 'Hide additional projects'
     }
 }

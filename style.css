@@ -2,6 +2,7 @@
 
 * {
     scroll-behavior: smooth;
+    scroll-margin: 50px;
     box-sizing: border-box;
 }
 
@@ -221,9 +222,7 @@ section h1{
     justify-content: space-between;
     flex-wrap: wrap;
 }
-#socialmedia{
-    
-}
+
 .contactbutton{
     width: 450px;
     outline: none;
@@ -242,9 +241,7 @@ section h1{
     border: 3px solid rgb(216,0,216);
     background-color: rgb(40, 40, 83);
 }
-#edublock{
 
-}
 .eduelem{
     /* border: 1px solid rgb(216,0,216); */
     max-width: 400px;
@@ -258,9 +255,7 @@ section h1{
 .eduelem h3{
     margin: 0;
 }
-.eduelem span{
-    
-}
+
 .faicn{
     text-align: center;
     width: 30px;
@@ -305,11 +300,15 @@ section h1{
     border-radius: 7px;
     height: 500px;
     font-size: 20px;
+    scroll-margin: 100px;
 }
 .projectcontainer img{
     border: 3px solid rgb(216,0,216);
     border-radius: 7px;
-    max-width: 300px;
+    width: 300px;
+}
+.projectcontainer h3{
+    margin: 5px 0;
 }
 .onshow{
     display: none;
