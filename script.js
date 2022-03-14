@@ -1,6 +1,17 @@
 //alert('This website is still under construction')
 if(window.location.href.includes('success')){
-    document.getElementById('emailsent').classList.add('shown')
+    document.getElementById('emailsent').style.height = '60px';
+    document.getElementById('emailsent').style.visibility = 'visible'
+    document.getElementById('emailsent').style.opacity = '100%';
+
+    setTimeout(
+        function(){
+        document.getElementById('emailsent').style.height = '0';
+        document.getElementById('emailsent').style.visibility = 'hidden'
+        document.getElementById('emailsent').style.opacity = '0';
+        }
+        , 5000
+    )
 }
 
 
