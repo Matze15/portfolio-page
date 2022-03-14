@@ -1,4 +1,8 @@
 //alert('This website is still under construction')
+if(window.location.href.includes('success')){
+    alert('works')
+}
+
 
 function toggleMobileMenu(element){
     element.classList.toggle('open')

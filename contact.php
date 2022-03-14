@@ -11,5 +11,5 @@ if (isset($_POST['submit'])) {
     $txt = $name." wrote via contactform:\n\n".$messagetext;
 
     mail($mailTo , $subject , $txt , $headers);
-    header("Location: ./");
+    header("Location: ./?success");
 }
