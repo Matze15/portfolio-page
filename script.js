@@ -1,6 +1,6 @@
 //alert('This website is still under construction')
 if(window.location.href.includes('success')){
-    alert('works')
+    document.getElementById('emailsent').classList.add('shown')
 }
 
 
