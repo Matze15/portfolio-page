@@ -12,6 +12,7 @@ if(window.location.href.includes('success')){
         }
         , 5000
     )
+    history.replaceState({},'Matthies Kallsen','http://kallsen.net')
 }
 
 
