@@ -12,9 +12,6 @@ if(window.location.href.includes('success')){
         }
         , 5000
     )
-    setTimeout(function(){
-        window.location.href = window.location.href.replace('?success','')
-    },6000)
 }
 
 
