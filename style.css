@@ -372,6 +372,9 @@ section h1{
 
 
 @media screen and (max-width: 700px){
+    *{
+        scroll-margin: -60px;
+    }
     h1{
         text-align: center;
     }
