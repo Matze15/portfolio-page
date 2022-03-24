@@ -211,12 +211,17 @@
           <div id="contactbody">
 
           <!-- <form action="./contact.php" method="post"> -->
-            <form method="post">
+            <form action="./contact.php" method="post">
             <input type="text" name="name" placeholder="Your name."><br>
             <input type="text" name="email" placeholder="You Email."><br>
             <input type="text" name="subject" placeholder="Subject."><br>
             <textarea name="message" id="messagetext" cols="30" rows="10" placeholder="Message."></textarea><br>
-            <input type="submit" name="submit" disabled="" value="Currently disabled due to spam.">
+            <div>
+              <span id='form-captcha-wrong'>Please enter the correct captcha.<br></span>
+              <input type="text" id="form-captcha-answer">
+            </div>
+            <input onclick="handleCaptcha(this)" type="button" value="Send Email" class="submit-form">
+            <!-- <input type="submit" name="submit" disabled="" value="Send Email"> -->
           </form>
 
           <div id="socialmedia">

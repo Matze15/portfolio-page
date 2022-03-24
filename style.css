@@ -225,7 +225,7 @@ section h1{
     border: none;
     border-radius: 5px;
 }
-#contact form input[type=submit]{
+.submit-form{
     width: 450px;
     outline: none;
     color: white;
@@ -239,9 +239,13 @@ section h1{
     border-radius: 5px;
     transition: 0.4s;
 }
-#contact form input[type=submit]:hover{
+.submit-form:hover{
     border: 3px solid rgb(216,0,216);
     background-color: rgb(40, 40, 83);
+}
+#form-captcha-wrong{
+    color: red;
+    display: none;
 }
 #contactbody{
     display: flex;
