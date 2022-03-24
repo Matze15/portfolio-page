@@ -27,6 +27,7 @@ function change(id,newText){
 function handleCopy(string , elem){
     if (navigator.clipboard) {
         navigator.clipboard.writeText(string);
+        change('buttondisc','Copied to clipboard!')
         return true
     } else {
         elem.onmouseover = '';
