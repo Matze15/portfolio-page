@@ -24,8 +24,17 @@ function change(id,newText){
     elem = document.getElementById(id);
     elem.innerHTML = newText;
 }
-function copy(string){
-    navigator.clipboard.writeText(string);
+function handleCopy(string , elem){
+    if (navigator.clipboard) {
+        navigator.clipboard.writeText(string);
+        return true
+    } else {
+        elem.onmouseover = '';
+        elem.onmouseout = '';
+        elem.style.cursor = 'text'
+        elem.style.userSelect = 'text';
+        return false
+    }
 }
 let moreProjectsShown = false;
 function showMoreProjects(){
