@@ -60,7 +60,6 @@ function generateCaptcha(){
     let capSecond = Math.floor(Math.random() * (101) + 1)
     document.getElementById('form-captcha-answer').placeholder = 'Captcha: What is ' + capFirst + ' + ' + capSecond + '?';
     solCaptcha = capFirst + capSecond;
-    console.log(solCaptcha)
 }
 
 function handleCaptcha(button){
