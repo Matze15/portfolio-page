@@ -401,7 +401,7 @@ section h1{
         display: flex;
         justify-content: center;
     }
-    #contact form input[type=submit]{
+    #contact .submit-form{
         width: 300px;
     }
     #contact form input[type=text]{
