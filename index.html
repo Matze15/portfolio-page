@@ -2,8 +2,7 @@
 <html lang="">
   <head>
     <script>
-      const sCheck = new RegExp('http:*');
-      if(window.location.href.match(sCheck)){
+      if(window.location.href.includes('http:')){
         window.location.href == window.location.href.replace('http','https')
       }
     </script>
